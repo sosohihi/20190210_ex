@@ -5,19 +5,53 @@
   
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src='/javascripts/jquery.3.1.min.js'></script>
   </head>
 
 
   <body>
     <h1> Hiiii </h1>
     <p>Welcome to my homepage</p>
-  <div style= "font-size: 50px; color:#ffffff; background-color:#8885A4;">
+  <div id="a1" style= "font-size: 50px; color:#ffffff; background-color:rgb(136, 133, 164);">
     고오양이 
   </div>
   <div>
     최고야 
     </div>
     <img src='/images/smiecat.jpg' />
-  </body>
+    
+    <input id ='button1'  type="button" value="누르게"/>
+  
+  
+  <script>
+$('#button1').click(function(){
+  alert('hihi');
+
+
+});
+var a= 1;
+$(document).on('click','#a1',function(){
+  console.log('쉬익');
+if(a==1){
+  a=2;
+  $('#a1').css('background-color' , 'rgb(140,133,200)');
+}
+else if(a==2){
+a=3;
+$('#a1').css('background-color' , 'rgb(136, 133, 164)');   
+
+}  
+else if(a==3){
+a=1;
+$('#a1').css('background-color' , 'rgb(140,133,100)');
+}
+
+
+
+});
+
+  </script>
+  
+</body>
 </html>
 

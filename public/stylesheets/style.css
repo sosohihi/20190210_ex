@@ -1,3 +1,15 @@
+.menubar{
+  background-color:#ff9966; height:70px; position:relative;
+ }
+
+.contents{
+color:#ddd6f3; top:30px; position:absolute;font-size:30px;cursor:pointer;
+}
+.contents:hover{
+  color:#4b6cb7
+
+  }
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -5,4 +17,44 @@ body {
 
 a {
   color: #00B7FF;
+}
+
+.a123{
+background:#1AAB8A;
+            color:#fff;
+            border:none;
+            position:relative;
+            height:60px;
+            font-size:1.6em;
+            padding:0 2em;
+            cursor:pointer;
+            transition:800ms ease all;
+            outline:none;
+}
+
+.a123:hover{
+  background:#fff;
+  color:#ff9966
+  ;
+}
+.a123:before,.a123:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #ff9966
+  ;
+  transition:400ms ease all;
+}
+.a123:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.a123:hover:before.a123:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }

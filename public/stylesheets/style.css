@@ -3,7 +3,7 @@
  }
 
 .contents{
-color:#ddd6f3; top:30px; position:absolute;font-size:30px;cursor:pointer;
+color:#ddd6f3; top:30px; position:absolute;font-size:30px;cursr:pointer;
 }
 .contents:hover{
   color:#4b6cb7
@@ -20,7 +20,7 @@ a {
 }
 
 .a123{
-background:#1AAB8A;
+background:#dae2f8;
             color:#fff;
             border:none;
             position:relative;

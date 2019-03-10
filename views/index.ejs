@@ -3,49 +3,64 @@
  <!-- 이 html에 대해 정의 초기설정 등등 -->   
   <head>
   
-    <title><%= title %></title>
+    <title>My page</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src='/javascripts/jquery.3.1.min.js'></script>
   </head>
 
 
+  <div>
+      <input class="a123" type = 'button' value = "Main Page"/>
+
+
+</div> 
+
   <body>
 
     <div class="menubar" > 
-      <div class= "contents"style = "left:100px;"> menu1 </div> 
-      <div class= "contents"style = "left:500px;"> menu2 </div> 
-      <div class= "contents"style = "left:1000px;"> menu3 </div> 
+      <div id = 'button1' class= "contents"style = "left:50px;"> What is cat? </div> 
+      <div id= 'button2' class= "contents"style = "left:400px;"> Do you wanna raise a cat? </div> 
+      <div class= "contents"style = "left:900px;"> goods SHOP </div> 
      
     </div>
 
 
-    <div>
-          <input class="a123" type = 'button' value = "졸려"/>
-
-
-    </div> 
+    
 
 
 
-    <h1> Hiiii </h1>
+    <h1> Hi </h1>
     <p>Welcome to my homepage</p>
+  
   <div id="a1" style= "font-size: 50px; color:#ffffff; background-color:rgb(136, 133, 164);">
-    고오양이 
+    고양이다 
   </div>
   <div>
-    최고야 
+    잘왔다
     </div>
     <img src='/images/smiecat.jpg' />
     
     <input id ='button1'  type="button" value="누르게"/>
   
   
+  
+  <form id= 'form_1' action='/abc' style = 'display:none;'>
+  </form>
+  
   <script>
-$('#button1').click(function(){
-  alert('hihi');
-
-
+$(document).on('click','#button1',function(){
+  //alert('갹갹');
+  //$('#form_1').submit();  
+  window.location.href='/abc';
+  
 });
+
+$(document).on('click','#button2',function(){
+  alert('get a job');
+});
+
+
+
 var a= 1;
 $(document).on('click','#a1',function(){
   console.log('쉬익');

@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- html을 킴 -->
+<html>
+<!-- 이 html에 대해 정의 초기설정 등등 -->
+
+<head>
+
+    <title>My page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src='/javascripts/jquery.3.1.min.js'></script>
+</head>
+
+
+<div>
+    <input class="a123" type='button' value="Main Page" />
+
+
+</div>
+
+<body>
+
+    <div class="menubar">
+        <div id='button1' class="contents" style="left:50px;"> What is cat? </div>
+        <div id='button2' class="contents" style="left:400px;"> Do you wanna raise a cat? </div>
+        <div class="contents" style="left:900px;"> goods SHOP </div>
+
+    </div>
+
+
+    <div style = "margin-top:0px;text-align:center; height:400px; background-color:#ffefba;">
+        <div style = "padding-top:20px">
+            <input type='text' value='개쩌는 사족보행 동물이다.'/>
+        </div>
+        <div style = "margin-top:20px;">
+                <img src='/images/cool.gif' />
+        </div>
+    </div>
+
+    
+
+
+
+    <script>
+        $('.a123').click(function () {
+            alert("쉭");
+            window.location.href = '/';
+        });
+        $(document).on('click', '#button2', function () {
+            alert('get a job');
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

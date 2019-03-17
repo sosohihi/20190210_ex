@@ -11,10 +11,10 @@
 
 
 <div>
-    <input class="a123" type='button' value="Main Page" />
-
-
-</div>
+    <input class="a123" type = 'button' value = "Main Page"/>
+    <input id='gotomain' type= 'button'/>
+  
+  </div> 
 
 <body>
 
@@ -40,8 +40,13 @@
 
 
     <script>
+        $('#gotomain').click(function () {
+            window.location.href = '/';
+        });
+
         $('.a123').click(function () {
-            alert("쉭");
+            
+            //alert("쉭");
             window.location.href = '/';
         });
         $(document).on('click', '#button2', function () {

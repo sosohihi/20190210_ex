@@ -1,3 +1,21 @@
+#gotomain{
+  background: url( "/images/smalllogo2.png" ) no-repeat;
+  border: none;
+  width: 100px;
+  height: 100px;
+  background-size:contain;
+  cursor: pointer;
+  position:absolute;
+  left:10px;
+  z-index:100;
+}
+
+#gotomain:hover{
+  transform:scale(1.3,1.3);
+  -webkit-transform:scale(1.3,1.3);
+  -moz-transform:scale(1.3,1.3);
+}
+
 .menubar{
   background-color:#ff9966; height:70px; position:relative;
  }
@@ -30,6 +48,7 @@ background:#dae2f8;
             cursor:pointer;
             transition:800ms ease all;
             outline:none;
+            z-index:120;
 }
 
 .a123:hover{
@@ -37,24 +56,26 @@ background:#dae2f8;
   color:#ff9966
   ;
 }
-.a123:before,.a123:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #ff9966
-  ;
-  transition:400ms ease all;
-}
-.a123:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.a123:hover:before.a123:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
+
+.login{
+  background:#dae2f8;
+              color:#fff;
+              border:none;
+              position:absolute;
+              height:60px;
+              font-size:1.6em;
+              padding:0 2em;
+              cursor:pointer;
+              transition:800ms ease all;
+              outline:none;
+              z-index:120;
+              right:59px;
+
+              
+  }
+  
+  .login:hover{
+    background:#fff;
+    color:#ff9966
+    ;
+  }

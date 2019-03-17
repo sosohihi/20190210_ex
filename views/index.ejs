@@ -7,15 +7,14 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src='/javascripts/jquery.3.1.min.js'></script>
   </head>
-
-
-  <div>
-      <input class="a123" type = 'button' value = "Main Page"/>
-
-
-</div> 
-
   <body>
+
+    
+    <div>
+      <input class="a123" type = 'button' value = "Main Page"/>
+      <input id='gotomain' type= 'button'/>
+      <input class="login" type = 'button' value = "Login"/>
+    </div> 
 
     <div class="menubar" > 
       <div id = 'button1' class= "contents"style = "left:50px;"> What is cat? </div> 
@@ -48,6 +47,14 @@
   </form>
   
   <script>
+$(document).on('click','.login',function(){
+  //alert('갹갹');
+  //$('#form_1').submit();  
+  window.location.href='/users/login';
+  
+});
+
+
 $(document).on('click','#button1',function(){
   //alert('갹갹');
   //$('#form_1').submit();  

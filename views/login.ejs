@@ -13,26 +13,62 @@
 
 
 <body>
-    <form action="/users/login" method="post">
-        <div> padding: "20px" </div>
 
+    <form id="login_form" action="/users/login" method="post" class="loginform">
+        <div style="margin-top:10px;">
 
-        <div>
-            <input type="text" placeholder="ID" name="ID" />
+            <img src="/images/bullet_cat2.jpg" style="
+                background-position: center;
+                max-width:100%;
+                max-height:100%;
+                width: 300px;
+                height:300px;">
+        </div>
+
+        <div style="margin-top:10px;">
+            <input id="ID" type="text" placeholder="ID" name="ID"
+                style="border-style:dashed; border-color:lightgray;height:20px;padding-left:10px;outline:none;" />
 
         </div>
-        
-        <div>
-            <input type="password" placeholder="Password" name="PW" />
+
+        <div style="margin-top:10px;">
+            <input id="PW" type="password" placeholder="Password" name="PW"
+                style="border-style:dashed; border-color:lightgray;height:20px;padding-left:10px;outline:none;" />
         </div>
 
-        <div>
-            <input type='submit' value='로그인시켜줘라' />
+        <div style="margin-top:20px;">
+            <input type="button" id = 'lets_login' value='로그인시켜줘라' /> 
+
         </div>
 
     </form>
+    <script>
+        $(document).on('click','#lets_login',function(){
+            //alert('로그인시도');
+            //아이디 패스워드 모두 입력시 제출
+            //$('#login_form').submit();
+            console.log($('#ID').val());
+            console.log($('#PW').val());
 
+
+            if( !$('#ID').val() ){
+              alert('아이디를 입력하세요');  
+             }
+             else if(   !$('#PW').val()   ){
+                 alert('비밀번호를 입력하세요');
+             }
+             else if( $('#ID').val() && $('#PW').val()){
+               $('#login_form').submit();  
+             }
+
+            
+
+        });
+
+    </script>
 
 </body>
+
+
 
 </html>

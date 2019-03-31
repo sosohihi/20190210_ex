@@ -16,11 +16,15 @@ router.get('/login', function(req, res, next) {
 
 
 router.post('/login', function(req, res, next) {
-  if(req.body.ID=='cat'){
+ 
+console.log('입력한 아이디:',req.body.ID);
+console.log('입력한 비밀번호:',req.body.PW);
+res.send('님의 정보는 내 개인정보 컬렉션에 추가됨ㅎㅎ');
+ /* if(req.body.ID=='cat'){
 
   
   if(req.body.PW=='joa'){
-    res.send('Login 성공');
+    res.send('Login 성공!');
   }
   else{
   res.send('Login 실패: PW오류');
@@ -29,7 +33,7 @@ router.post('/login', function(req, res, next) {
 else{
   res.send('Login 실패: ID오류');
 }
-  
+  */
 });
 
 

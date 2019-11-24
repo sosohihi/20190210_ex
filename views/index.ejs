@@ -26,10 +26,6 @@
 
   
 
-
-
-    <h1> Hi </h1>
-    <p>Welcome to my homepage</p>
   
   <div id="a1" style= "font-size: 50px; color:#ffffff; background-color:rgb(136, 133, 164);">
     고양이다 
@@ -39,7 +35,7 @@
     </div>
     <img src='/images/smiecat.jpg' />
     
-    <input id ='button1'  type="button" value="누르게"/>
+    <input id ='button3'  type="button" value="누르게"/>
   
   
   
@@ -47,6 +43,12 @@
   </form>
   
   <script>
+    $(document).ready(function(){
+       $('#button3').click(function(){
+         alert('고양이 옆 버튼을 눌렀구나 으헤헤');
+       });
+    });
+
 $(document).on('click','.login',function(){
   //alert('갹갹');
   //$('#form_1').submit();  
